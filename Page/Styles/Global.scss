@@ -1,0 +1,35 @@
+// Include
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+// Global variables
+$tinkoff-ff: 'Roboto', sans-serif;
+
+$yellow: #ffdd2d;
+
+// Global properties
+
+body {
+    font-family: $tinkoff-ff;
+    font-size: 0.8em;
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .tinkoff-box {
+        max-width: 1080px;
+        margin: auto;
+    }
+
+    .tinkoff-btn {
+        transition: 0.3s;
+        padding: 9px 12px 7px;
+        border-radius: 4px;
+    }
+
+}
