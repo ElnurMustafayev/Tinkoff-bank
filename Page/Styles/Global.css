@@ -3,6 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 0.8em;
+  color: #000000cc;
 }
 
 body a {
@@ -23,5 +24,36 @@ body .tinkoff-btn {
   transition: 0.3s;
   padding: 9px 12px 7px;
   border-radius: 4px;
+}
+
+body .tinkoff-nav {
+  font-weight: 500;
+}
+
+body .tinkoff-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+body .tinkoff-nav ul li a {
+  display: inline-block;
+  padding: 20px 0;
+  color: #959ba4;
+}
+
+body .tinkoff-nav ul li a:hover {
+  color: #333;
+  border-bottom: 2px solid #b3b3b3;
+}
+
+body .tinkoff-nav ul li a.active {
+  color: #333;
+  border-bottom: 2px solid #ffdd2d;
 }
 /*# sourceMappingURL=Global.css.map */
