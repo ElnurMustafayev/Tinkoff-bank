@@ -20,6 +20,10 @@ body {
     font-size: 0.8em;
     color: $text-black;
 
+    ::selection {
+        background-color: $yellow-border;
+    }
+
     a {
         text-decoration: none;
     }
@@ -34,8 +38,8 @@ body {
     }
 
     .tinkoff-btn {
+        display: inline-block;
         transition: 0.3s;
-        padding: 9px 12px 7px;
         border-radius: 4px;
     }
 }

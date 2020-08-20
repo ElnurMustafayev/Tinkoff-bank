@@ -41,6 +41,7 @@ header .up .inner nav ul a.active, header .up .inner nav ul a:hover {
 
 header .up .tinkoff-btn {
   background-color: white;
+  padding: 9px 12px 7px;
   text-transform: uppercase;
   color: black;
   -webkit-box-shadow: 0px 2px 5px 0px #59595980;

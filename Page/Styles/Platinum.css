@@ -25,8 +25,63 @@ body .platinum header .tinkoff-nav ul li {
 }
 
 body .platinum main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 32px;
-  height: 292px;
   background-color: #f5f5f6;
+}
+
+body .platinum main .content {
+  padding: 24px;
+  margin: 0 40px;
+}
+
+body .platinum main .content h2, body .platinum main .content h3 {
+  margin: 0;
+}
+
+body .platinum main .content h2 {
+  letter-spacing: -2px;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+body .platinum main .content p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+body .platinum main .content .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 20px 0;
+}
+
+body .platinum main .content .items > .item h3 {
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+body .platinum main .content .tinkoff-btn {
+  color: #000000cc;
+  background-color: #ffdd2d;
+  font-size: 16px;
+  padding: 12px 20px;
+}
+
+body .platinum main .content .tinkoff-btn:hover {
+  background-color: #f6cd00;
 }
 /*# sourceMappingURL=Platinum.css.map */

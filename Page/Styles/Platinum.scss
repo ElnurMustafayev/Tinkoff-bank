@@ -1,4 +1,6 @@
 $text-black: #000000cc;
+$yellow-bg: #ffdd2d;
+$yellow-bg-hover: #f6cd00;
 
 body {
     .platinum {
@@ -27,9 +29,60 @@ body {
         }
 
         main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             margin-top: 32px;
-            height: 292px;
             background-color: #f5f5f6;
+            
+            .content {
+                padding: 24px;
+                margin: 0 40px;
+
+                h2, h3 {
+                    margin: 0;
+                }
+
+                // header word
+                h2 {
+                    letter-spacing: -2px;
+                    font-size: 38px;
+                    font-weight: 400;
+                }
+
+                // info
+                p {
+                    font-size: 14px;
+                    margin: 10px 0;
+                }
+
+                // pluses
+                .items {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 80%;
+                    margin: 20px 0;
+
+                    > .item {
+                        h3 {
+                            font-weight: 500;
+                            margin-bottom: 7px;
+                        }
+                    }
+                }
+
+                // accept
+                .tinkoff-btn {
+                    color: $text-black;
+                    background-color: $yellow-bg;
+                    font-size: 16px;
+                    padding: 12px 20px;
+
+                    &:hover {
+                        background-color: $yellow-bg-hover;
+                    }
+                }
+            }
         }
     }
 }
