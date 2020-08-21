@@ -1,0 +1,72 @@
+$gray-bg: #f5f5f6;
+$gray-border: #dfdfdf;
+
+.tunecard {
+    .inner {
+        display: flex;
+
+        .tune {
+            flex-grow: 1;
+            // background-color: #ffa9a9;
+
+            header {
+                justify-content: space-between;
+                display: flex;
+            }
+
+            main {
+                .slider {
+                    border: 1px solid $gray-border;
+                    border-radius: 5px;
+                    padding: 24px;
+
+                    span {
+                        font-size: 12px;
+                    }
+
+                    .money {
+                        font-size: 24px;
+                        font-weight: 400;
+                        margin: 15px 0;
+                    }
+
+                    .numbers {
+                        margin-top: 8px;
+                        display: flex;
+                        justify-content: space-between;
+                        position: relative;
+
+                        > * {
+                            display: flex;
+                            width: 64px;
+                            flex-direction: column;
+                            align-items: center;
+
+                            &:hover {
+                                cursor: pointer;
+                            }
+
+                            &:not(:first-child) {
+                                &:not(:last-child) {
+                                    &::before {
+                                        content: "|";
+                                        z-index: -9999;
+                                        top: -18px;
+                                        position: absolute;
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                }
+            }
+        }
+
+        .result {
+            width: 250px;
+            height: 100px;
+            background-color: #a0ffa0;
+            margin-left: 40px;
+        }
+    }
+}

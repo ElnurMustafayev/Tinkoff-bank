@@ -1,0 +1,29 @@
+$gray-bg: #f5f5f6;
+
+.steps {
+
+    .items {
+        display: flex;
+
+        .item {
+
+            .box-number {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                background-color: $gray-bg;
+                color: #5d5d5d;
+                font-size: 26px;
+                width: 55px;
+                height: 55px;
+                border-radius: 15px;
+                
+            }
+
+            >p {
+                text-align: center;
+            }
+        }
+    }
+}

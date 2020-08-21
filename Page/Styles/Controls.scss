@@ -1,0 +1,35 @@
+$yellow: #ffdd2d;
+
+input[type="range"] {
+    appearance: none;
+    width: 100%;
+    background: transparent;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+// thumb
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    border: 2.5px solid $yellow;
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    margin-top: -7px;
+    background: white;
+    cursor: grab;
+
+    &:active {
+        cursor: grabbing;
+    }
+}
+
+// track
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    background: #d6d6d6;
+}

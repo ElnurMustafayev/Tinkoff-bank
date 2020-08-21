@@ -1,0 +1,80 @@
+.tunecard .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tunecard .inner .tune {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.tunecard .inner .tune header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tunecard .inner .tune main .slider {
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  padding: 24px;
+}
+
+.tunecard .inner .tune main .slider span {
+  font-size: 12px;
+}
+
+.tunecard .inner .tune main .slider .money {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+.tunecard .inner .tune main .slider .numbers {
+  margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.tunecard .inner .tune main .slider .numbers > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 64px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tunecard .inner .tune main .slider .numbers > *:hover {
+  cursor: pointer;
+}
+
+.tunecard .inner .tune main .slider .numbers > *:not(:first-child):not(:last-child)::before {
+  content: "|";
+  z-index: -9999;
+  top: -18px;
+  position: absolute;
+}
+
+.tunecard .inner .result {
+  width: 250px;
+  height: 100px;
+  background-color: #a0ffa0;
+  margin-left: 40px;
+}
+/*# sourceMappingURL=TuneCard.css.map */
