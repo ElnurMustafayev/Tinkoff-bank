@@ -17,7 +17,6 @@ $header-bg: #f5f5f6;
 
 body {
     font-family: $tinkoff-ff;
-    font-size: 0.8em;
     color: $text-black;
 
     ::selection {
@@ -33,7 +32,7 @@ body {
     }
 
     .tinkoff-box {
-        max-width: 1080px;
+        max-width: 1150px;
         margin: auto;
     }
 
@@ -73,5 +72,13 @@ body {
                 }
             }
         }
+    }
+
+    // section head
+    .section-head {
+        font-size: 32px;
+        font-weight: 400;
+        text-align: center;
+        margin: 62px 0 46px 0;
     }
 }

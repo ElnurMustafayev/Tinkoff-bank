@@ -7,7 +7,7 @@ $active: #333;
 $not-active: #959ba4;
 $header-bg: #f5f5f6;
 
-header {
+body >header {
     .up {
         background-color: $header-bg;
 

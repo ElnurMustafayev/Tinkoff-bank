@@ -1,0 +1,22 @@
+.notpay .items {
+  display: -ms-grid;
+  display: grid;
+  grid: 1fr/repeat(3, 1fr);
+  gap: 50px;
+}
+
+.notpay .items .item {
+  border: 0.3px solid #dedede;
+  padding: 32px;
+}
+
+.notpay .items .item > * {
+  margin: 0;
+}
+
+.notpay .items .item h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=NotPay.css.map */

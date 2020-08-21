@@ -2,7 +2,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 0.8em;
   color: #000000cc;
 }
 
@@ -23,7 +22,7 @@ body ul {
 }
 
 body .tinkoff-box {
-  max-width: 1080px;
+  max-width: 1150px;
   margin: auto;
 }
 
@@ -63,5 +62,12 @@ body .tinkoff-nav ul li a:hover {
 body .tinkoff-nav ul li a.active {
   color: #333;
   border-bottom: 2px solid #ffdd2d;
+}
+
+body .section-head {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin: 62px 0 46px 0;
 }
 /*# sourceMappingURL=Global.css.map */
