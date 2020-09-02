@@ -271,6 +271,13 @@ body .platinum main .content .tinkoff-btn:hover {
   text-align: center;
 }
 
+.tunecard {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f6), to(#f5f5f600)) no-repeat;
+  background: linear-gradient(180deg, #f5f5f6, #f5f5f600) no-repeat;
+  padding-top: 72px;
+  margin-top: 32px;
+}
+
 .tunecard .inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +297,16 @@ body .platinum main .content .tinkoff-btn:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.tunecard .inner .tune main > * {
+  margin-bottom: 20px;
+}
+
+.tunecard .inner .tune main > input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
 }
 
 .tunecard .inner .tune main .slider {
@@ -331,6 +348,7 @@ body .platinum main .content .tinkoff-btn:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  white-space: nowrap;
 }
 
 .tunecard .inner .tune main .slider .numbers > *:hover {
@@ -344,11 +362,98 @@ body .platinum main .content .tinkoff-btn:hover {
   position: absolute;
 }
 
+.tunecard .inner .tune main .combobox {
+  width: 100%;
+}
+
+.tunecard .inner .tune main .combobox option:checked {
+  background-color: #eeeeee;
+}
+
+.tunecard .inner .tune main .combobox option {
+  padding: 10px;
+  margin: 10px;
+}
+
+.tunecard .inner .tune main .combobox option:hover {
+  background-color: #c2c2c2 !important;
+}
+
+.tunecard .inner .tune main .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tunecard .inner .tune main .contacts input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.tunecard .inner .tune main .contacts input:first-child {
+  margin-right: 30px;
+}
+
+.tunecard .inner .tune hr {
+  margin: 40px 0;
+  border-color: #f3f3f367;
+}
+
+.tunecard .inner .tune footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  padding: 0 15px;
+}
+
+.tunecard .inner .tune footer label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tunecard .inner .tune footer label:hover, .tunecard .inner .tune footer label > *:hover {
+  cursor: pointer;
+}
+
+.tunecard .inner .tune footer input[type=checkbox] {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin-right: 15px;
+}
+
+.tunecard .inner .tune footer .tinkoff-btn {
+  font-size: 18px;
+  padding: 20px 40px !important;
+}
+
 .tunecard .inner .result {
   width: 250px;
-  height: 100px;
   background-color: #a0ffa0;
   margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body {
@@ -372,6 +477,10 @@ body ul {
   list-style: none;
 }
 
+body .bold-word {
+  font-weight: 500;
+}
+
 body .tinkoff-box {
   max-width: 1150px;
   margin: auto;
@@ -382,6 +491,31 @@ body .tinkoff-btn {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 4px;
+  color: #000000cc;
+  background-color: #ffdd2d;
+  font-size: 16px;
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+}
+
+body .tinkoff-btn:hover {
+  cursor: pointer;
+  background-color: #f6cd00;
+}
+
+body .tinkoff-input {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 15px;
+  background-color: #f5f5f6;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+body .tinkoff-input:hover, body .tinkoff-input:focus {
+  background-color: #dedeff;
 }
 
 body .tinkoff-nav {

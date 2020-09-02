@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="Styles/Style.css" />
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="./Js/app.js"></script>
+  <script defer async src="./Js/app.js"></script>
 </head>
 
 <body>
@@ -213,18 +213,20 @@
   <section class="tunecard">
     <div class="inner tinkoff-box">
       <div class="tune">
+
         <header>
-          <p>Настройте свою карту</p>
+          <p class="bold-word">Настройте свою карту</p>
           <p>Шаг 1 из 4</p>
         </header>
+
+        <form method="post">
 
         <main>
           <div class="slider">
             <span>Желаемый кредитный лимит</span>
             <p class="money">5 000 ₽</p>
-            
-            <input type="range" min="5" max="1000" value="5" id="limit" 
-            onchange="console.dir(this.previousElementSibling.innerText = this.value + ' 000 ₽');">
+
+            <input type="range" min="5" max="1000" value="5" id="limit">
 
             <div class="numbers">
               <span>5000 ₽</span>
@@ -234,45 +236,52 @@
             </div>
           </div>
 
-          <select>
+          <select class="combobox tinkoff-input">
             <option value="1">Покупки</option>
             <option value="2">Снятие наличных</option>
             <option value="3">Погашение других кредитов</option>
             <option value="4">Оплата покупок бонусами</option>
           </select>
 
-          <p>Контактная информация</p>
+          <p class="bold-word">Контактная информация</p>
 
-          <input type="text">
+          <input type="text" class="tinkoff-input" placeholder="Фамилия, имя и отчество">
           <div class="contacts">
-            <input type="tel">
-            <input type="email">
+            <input type="tel" class="tinkoff-input" placeholder="Мобильный телефон">
+            <input type="email" class="tinkoff-input" placeholder="Электронная почта">
           </div>
 
         </main>
 
+        <hr />
         <footer>
-          <input type="checkbox" name="agree" id="agree">
-          <label for="agree">Я принимаю условия передачи информации</label>
-          <button>Далее</button>
+          <label for="agree">
+            <input type="checkbox" name="agree" id="agree">
+            Я принимаю условия передачи информации
+          </label>
+          <button class="tinkoff-btn">Далее</button>
         </footer>
 
-        <form method="post">
-
-
         </form>
+
       </div>
 
       <div class="result">
-
+        <h4>right side</h4>
       </div>
+
     </div>
   </section>
 
 
 
 
-  <div style="margin-top: 500px; height: 500px; width: 100%; background-color: red;"></div>
+  <footer style=" height: 500px; background-color: rosybrown;
+                  display: flex; justify-content: center;
+                  align-items: center; font-size: 48px;
+                  color: white; margin-top: 200px;">
+    <h4>footer</h4>
+  </footer>
 
 
 </body>

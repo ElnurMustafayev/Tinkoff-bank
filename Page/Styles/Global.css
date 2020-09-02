@@ -21,6 +21,10 @@ body ul {
   list-style: none;
 }
 
+body .bold-word {
+  font-weight: 500;
+}
+
 body .tinkoff-box {
   max-width: 1150px;
   margin: auto;
@@ -31,6 +35,31 @@ body .tinkoff-btn {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 4px;
+  color: #000000cc;
+  background-color: #ffdd2d;
+  font-size: 16px;
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+}
+
+body .tinkoff-btn:hover {
+  cursor: pointer;
+  background-color: #f6cd00;
+}
+
+body .tinkoff-input {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 15px;
+  background-color: #f5f5f6;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+body .tinkoff-input:hover, body .tinkoff-input:focus {
+  background-color: #dedeff;
 }
 
 body .tinkoff-nav {
